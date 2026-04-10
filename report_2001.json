@@ -1,0 +1,1372 @@
+{
+  "generated_at": "2026-04-10T10:54:53.304966",
+  "article": {
+    "url": "https://arxiv.org/abs/2001.08361",
+    "title": "Scaling Laws for Neural Language Models",
+    "description": "We study empirical scaling laws for language model performance on the cross-entropy loss. The loss scales as a power-law with model size, dataset size, and the amount of compute used for training, with some trends spanning more than seven orders of magnitude. Other architectural details such as network width or depth have minimal effects within a wide range. Simple equations govern the dependence of overfitting on model/dataset size and the dependence of training speed on model size. These relationships allow us to determine the optimal allocation of a fixed compute budget. Larger models are significantly more sample-efficient, such that optimally compute-efficient training involves training very large models on a relatively modest amount of data and stopping significantly before convergence.",
+    "keywords": [
+      "Scaling",
+      "Laws",
+      "Neural",
+      "Language",
+      "study",
+      "empirical",
+      "performance",
+      "cross",
+      "entropy",
+      "loss",
+      "scales",
+      "power"
+    ],
+    "authors": [
+      "Jared Kaplan",
+      "Sam McCandlish",
+      "Tom Henighan",
+      "Tom B. Brown",
+      "Benjamin Chess",
+      "Rewon Child",
+      "Scott Gray",
+      "Alec Radford",
+      "Jeffrey Wu",
+      "Dario Amodei"
+    ],
+    "year": "2020",
+    "citation_count": null,
+    "influential_citation_count": null,
+    "fields_of_study": []
+  },
+  "summary": {
+    "total_references": 187,
+    "platforms": {
+      "DOI / Journal": 13,
+      "arXiv": 87,
+      "Hacker News": 35,
+      "Reddit": 32,
+      "Wikipedia": 10,
+      "Google News": 10
+    },
+    "usage_types": {
+      "Academic citation": 9,
+      "Critical discussion": 15,
+      "General discussion": 45,
+      "Reuse of ideas / derivative": 15,
+      "General mention": 76,
+      "Direct quote / citation": 7,
+      "News mention": 6,
+      "Positive endorsement": 6,
+      "Summary / paraphrase": 7,
+      "Contextual reference": 1
+    }
+  },
+  "references": [
+    {
+      "url": "https://doi.org/10.1109/TPDS.2026.3668887",
+      "snippet": "Pro-Prophet: A Systematic Load Balancing Method for Efficient Parallel Training of Large-Scale MoE Models — Wei Wang, Zhiquan Lai, Dongsheng Li (2026). The size of deep learning models has been increasing to enhance model quality. The linear increase in training computation budgets with model size means that training an extremely large-scale model is exceedingly time-consuming. Recently, the Mixture of Experts (MoE) has drawn significant attention",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.1109/TC.2026.3666827",
+      "snippet": "CNN-Based Transistor Modeling Under Self-Heating Effects — Tarek Mohamed, H. Amrouch (2026). Due to the steady shrinking of technology node sizes, Self-Heating Effect (SHE) has become at the forefront of reliability and longevity concerns. Without careful consideration of the increased temperatures, reliability effects such as aging will be underestimated, putting the transistor and circuit",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07963",
+      "snippet": "Rethinking Data Mixing from the Perspective of Large Language Models — Yuanjian Xu, Tianze Sun, Changwei Xu (2026). Data mixing strategy is essential for large language model (LLM) training. Empirical evidence shows that inappropriate strategies can significantly reduce generalization. Although recent methods have improved empirical performance, several fundamental questions remain open: what constitutes a domain",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07904",
+      "snippet": "Kuramoto Oscillatory Phase Encoding: Neuro-inspired Synchronization for Improved Learning Efficiency — Mingqing Xiao, Yansen Wang, Dongqi Han (2026). Spatiotemporal neural dynamics and oscillatory synchronization are widely implicated in biological information processing and have been hypothesized to support flexible coordination such as feature binding. By contrast, most deep learning architectures represent and propagate information through act",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.06542",
+      "snippet": "Does a Global Perspective Help Prune Sparse MoEs Elegantly? — Zeliang Zhang, Nikhil Ghosh, Jiani Liu (2026). Empirical scaling laws for language models have encouraged the development of ever-larger LLMs, despite their growing computational and memory costs. Sparse Mixture-of-Experts (MoEs) offer a promising alternative by activating only a subset of experts per forward pass, improving efficiency without s",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07015",
+      "snippet": "Corpora deduplication or duplication in Natural Language Processing of few resourced languages ? A case of study: The Mexico's Nahuatl — J. Guzmán-Landa, Juan-Manuel Torres-Moreno, Graham Ranger (2026). In this article, we seek to answer the following question: could data duplication be useful in Natural Language Processing (NLP) for languages with limited computational resources? In this type of languages (or $\\pi$-languages), corpora available for training Large Language Models are virtually n",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07035",
+      "snippet": "Gemma 4, Phi-4, and Qwen3: Accuracy-Efficiency Tradeoffs in Dense and MoE Reasoning Language Models — Md. Motaleb Hossen Manik, Ge Wang (2026). Mixture-of-experts (MoE) language models are often expected to offer better quality-efficiency tradeoffs than dense models because only a subset of parameters is activated per token, but the practical value of that advantage depends on end-to-end behavior under realistic inference constraints. We pr",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07530",
+      "snippet": "The Shrinking Lifespan of LLMs in Science — Ana Trivsovi'c (2026). Scaling laws describe how language model capabilities grow with compute and data, but say nothing about how long a model matters once released. We provide the first large-scale empirical account of how scientists adopt and abandon language models over time. We track 62 LLMs across over 108k citing p",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Direct quote / citation",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07487",
+      "snippet": "CLEAR: Context Augmentation from Contrastive Learning of Experience via Agentic Reflection — Linbo Liu, Guande Wu, Han Ding (2026). Large language model agents rely on effective model context to obtain task-relevant information for decision-making. Many existing context engineering approaches primarily rely on the context generated from the past experience and retrieval mechanisms that reuse these context. However, retrieved con",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07569",
+      "snippet": "Learning is Forgetting: LLM Training As Lossy Compression — Henry Conklin, Tom Hosking, Tan Yi-Chern (2026). Despite the increasing prevalence of large language models (LLMs), we still have a limited understanding of how their representational spaces are structured. This limits our ability to interpret how and what they learn or relate them to learning in humans. We argue LLMs are best seen as an instance",
+      "query": "Semantic Scholar citations",
+      "usage_type": "News mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.07658",
+      "snippet": "Optimal Decay Spectra for Linear Recurrences — Yang Cao (2026). Linear recurrent models offer linear-time sequence processing but often suffer from suboptimal long-range memory. We trace this to the decay spectrum: for $N$ channels, random initialization collapses the minimum spectral gap to $O(N^{-2})$, yielding sub-exponential error $\\exp(-\\Omega(N/\\log N))$;",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05267",
+      "snippet": "Do Domain-specific Experts exist in MoE-based LLMs? — Giang Do, Hung Le, Truyen Tran (2026). In the era of Large Language Models (LLMs), the Mixture of Experts (MoE) architecture has emerged as an effective approach for training extremely large models with improved computational efficiency. This success builds upon extensive prior research aimed at enhancing expert specialization in MoE-bas",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05404",
+      "snippet": "Beyond Accuracy: Unveiling Inefficiency Patterns in Tool-Integrated Reasoning — Qisheng Su, Shiting Huang, Zhen Fang (2026). In real-world Tool-Integrated Reasoning (TIR) scenarios, where LLMs interleave reasoning with external tool calls, a major source of inefficiency is that the toolcalls create pauses between LLM requests and cause KV-Cache eviction, forcing recomputation. Also, the long, unfiltered response returned",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.06129",
+      "snippet": "PoM: A Linear-Time Replacement for Attention with the Polynomial Mixer — David Picard, Nicolas Dufour, L. Degeorge (2026). This paper introduces the Polynomial Mixer (PoM), a novel token mixing mechanism with linear complexity that serves as a drop-in replacement for self-attention. PoM aggregates input tokens into a compact representation through a learned polynomial function, from which each token retrieves contextual",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05755",
+      "snippet": "CAKE: Cloud Architecture Knowledge Evaluation of Large Language Models — Tim Lukas Adam, Phongsakon Mark Konrad, Riccardo Terrenzi (2026). In today's software architecture, large language models (LLMs) serve as software architecture co-pilots. However, no benchmark currently exists to evaluate large language models'actual understanding of cloud-native software architecture. For this reason we present a benchmark called CAKE, which cons",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.06298",
+      "snippet": "Limits of Difficulty Scaling: Hard Samples Yield Diminishing Returns in GRPO-Tuned SLMs — Suraj R. Yadav, Siddharth Yadav, P. Goyal (2026). Recent alignment work on Large Language Models (LLMs) suggests preference optimization can improve reasoning by shifting probability mass toward better solutions. We test this claim in a resource-constrained setting by applying GRPO with LoRA to SLMs (up to 3B) for math reasoning on GSM8K and MATH d",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Direct quote / citation",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04539",
+      "snippet": "FlashSAC: Fast and Stable Off-Policy Reinforcement Learning for High-Dimensional Robot Control — Donghu Kim, youngdon lee, Minho Park (2026). Reinforcement learning (RL) is a core approach for robot control when expert demonstrations are unavailable. On-policy methods such as Proximal Policy Optimization (PPO) are widely used for their stability, but their reliance on narrowly distributed on-policy data limits accurate policy evaluation i",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04636",
+      "snippet": "Interpretation of Crystal Energy Landscapes with Kolmogorov-Arnold Networks — Gen Zu, Ning Mao, C. Felser (2026). Characterizing crystalline energy landscapes is essential to predicting thermodynamic stability, electronic structure, and functional behavior. While machine learning (ML) enables rapid property predictions, the\"black-box\"nature of most models limits their utility for generating new scientific insig",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04475",
+      "snippet": "Discrete Prototypical Memories for Federated Time Series Foundation Models — Liwei Deng, Qingxiang Liu, Xinhe Niu (2026). Leveraging Large Language Models (LLMs) as federated learning (FL)-based time series foundation models offers a promising way to transfer the generalization capabilities of LLMs to time series data while preserving access to private data. However, the semantic misalignment between time-series data a",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05068",
+      "snippet": "Towards Scaling Law Analysis For Spatiotemporal Weather Data — Alex B. Kiefer, Prasanna Balaprakash, Xiao Wang (2026). Compute-optimal scaling laws are relatively well studied for NLP and CV, where objectives are typically single-step and targets are comparatively homogeneous. Weather forecasting is harder to characterize in the same framework: autoregressive rollouts compound errors over long horizons, outputs coup",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05030",
+      "snippet": "Phase-Associative Memory: Sequence Modeling in Complex Hilbert Space — Gowrav Vishwakarma, Christopher J. Agostino (2026). We present Phase-Associative Memory (PAM), a recurrent sequence model in which all representations are complex-valued, associations accumulate in a matrix state $S_{t}$ $\\in$ $\\mathbb{C}^{d \\times d}$ via outer products, and retrieval operates through the conjugate inner product $K_t^* \\cdot Q_t / \\",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.64898/2026.04.02.716255",
+      "snippet": "From nucleotides to semantics: genomic representation learning via joint-embedding predictive architecture — Chengsen Wang, Qi Qi, Haifeng Sun (2026)",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04987",
+      "snippet": "Cactus: Accelerating Auto-Regressive Decoding with Constrained Acceptance Speculative Sampling — Yongchang Hao, Lili Mou (2026). Speculative sampling (SpS) has been successful in accelerating the decoding throughput of auto-regressive large language models by leveraging smaller draft models. SpS strictly enforces the generated distribution to match that of the verifier LLM. This is unnecessarily restrictive as slight variatio",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.64898/2026.04.01.715909",
+      "snippet": "VesSynth: Tubes Are All You Need for Robust Cross-Scale Cross-Modal 3D Vessel Segmentation — Chiara Mauri, Allison McKenzie, Cole Analoro (2026)",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04976",
+      "snippet": "Tencent Advertising Algorithm Challenge 2025: All-Modality Generative Recommendation — Junwei Pan, Wei Xue, Chao Zhou (2026). Generative recommender systems are rapidly emerging as a new paradigm for recommendation, where collaborative identifiers and/or multi-modal content are mapped into discrete token spaces and user behavior is modelled with autoregressive sequence models. Despite progress on multi-modal recommendation",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Positive endorsement",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02650",
+      "snippet": "Revealing the Learning Dynamics of Long-Context Continual Pre-training — Yupu Liang, Shuang Chen, Guanwei Zhang (2026). Existing studies on Long-Context Continual Pre-training (LCCP) mainly focus on small-scale models and limited data regimes (tens of billions of tokens). We argue that directly migrating these small-scale settings to industrial-grade models risks insufficient adaptation and premature training termina",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02766",
+      "snippet": "Random Is Hard to Beat: Active Selection in online DPO with Modern LLMs — Giyeong Oh, Jung-Hyun Lee, Jaehyun Park (2026). Modern LLMs inherit strong priors from web-scale pretraining, which can limit the headroom of post-training data-selection strategies. While Active Preference Learning (APL) seeks to optimize query efficiency in online Direct Preference Optimization (DPO), the inherent richness of on-policy candidat",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Direct quote / citation",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03191",
+      "snippet": "The Compression Gap: Why Discrete Tokenization Limits Vision-Language-Action Model Scaling — Takuya Shiba (2026). Scaling Vision-Language-Action (VLA) models by upgrading the vision encoder is expected to improve downstream manipulation performance--as it does in vision-language modeling. We show that this expectation fails when actions are represented as discrete tokens, and explain why through an information-",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Summary / paraphrase",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03172",
+      "snippet": "EffiMiniVLM: A Compact Dual-Encoder Regression Framework — Yin-Loon Khor, Y. Wong, Y. Hum (2026). Predicting product quality from multimodal item information is critical in cold-start scenarios, where user interaction history is unavailable and predictions must rely on images and textual metadata. However, existing vision-language models typically depend on large architectures and/or extensive e",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03486",
+      "snippet": "VisionClaw: Always-On AI Agents through Smart Glasses — Xiaoan Liu, Daeho Lee, Eric J. Gonzalez (2026). We present VisionClaw, an always-on wearable AI agent that integrates live egocentric perception with agentic task execution. Running on Meta Ray-Ban smart glasses, VisionClaw continuously perceives real-world context and enables in-situ, speech-driven action initiation and delegation via OpenClaw A",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03333",
+      "snippet": "Composer Vector: Style-steering Symbolic Music Generation in a Latent Space — Xunyi Jiang, Mingyang Yao, Jingyue Huang (2026). Symbolic music generation has made significant progress, yet achieving fine-grained and flexible control over composer style remains challenging. Existing training-based methods for composer style conditioning depend on large labeled datasets. Besides, these methods typically support only single-com",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02278",
+      "snippet": "LLMs as Idiomatic Decompilers: Recovering High-Level Code from x86-64 Assembly for Dart — Raafat Abualazm, Ayman Abo Elhassan (2026). Translating machine code into human-readable high-level languages is an open research problem in reverse engineering. Despite recent advancements in LLM-based decompilation to C, modern languages like Dart and Swift are unexplored. In this paper, we study the use of small specialized LLMs as an idio",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Contextual reference",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02135",
+      "snippet": "GaelEval: Benchmarking LLM Performance for Scottish Gaelic — Peter Devine, William Lamb, Beatrice Alex (2026). Multilingual large language models (LLMs) often exhibit emergent'shadow'capabilities in languages without official support, yet their performance on these languages remains uneven and under-measured. This is particularly acute for morphosyntactically rich minority languages such as Scottish Gaelic,",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01907",
+      "snippet": "Lifting Unlabeled Internet-level Data for 3D Scene Understanding — Yixin Chen, Yaowei Zhang, Huangyue Yu (2026). Annotated 3D scene data is scarce and expensive to acquire, while abundant unlabeled videos are readily available on the internet. In this paper, we demonstrate that carefully designed data engines can leverage web-curated, unlabeled videos to automatically generate training data, to facilitate end-",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01837",
+      "snippet": "PLOT: Enhancing Preference Learning via Optimal Transport — Liang Zhu, Yuelin Bai, Xiankun Ren (2026). Preference learning in Large Language Models (LLMs) has advanced significantly, yet existing methods remain limited by modest performance gains, high computational costs, hyperparameter sensitivity, and insufficient modeling of global token-level relationships. We introduce PLOT, which enhances Pref",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01659",
+      "snippet": "AURA: Multimodal Shared Autonomy for Real-World Urban Navigation — Yukai Ma, Honglin He, Selina Song (2026). Long-horizon navigation in complex urban environments relies heavily on continuous human operation, which leads to fatigue, reduced efficiency, and safety concerns. Shared autonomy, where a Vision-Language AI agent and a human operator collaborate on maneuvering the mobile machine, presents a promis",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02119",
+      "snippet": "AA-SVD : Anchored and Adaptive SVD for Large Language Model Compression — A. Sinha, Franccois Fleuret (2026). We introduce a fast low-rank factorization-based framework for compressing large language models that enables rapid compression of billion-parameter models without retraining. Unlike existing factorization-based approaches that optimize only on the original inputs, ignoring distribution shifts from",
+      "query": "Semantic Scholar citations",
+      "usage_type": "News mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02556",
+      "snippet": "Fast NF4 Dequantization Kernels for Large Language Model Inference — Xiang Qi, Chaoyi Jiang, Murali Annavaram (2026). Large language models (LLMs) have grown beyond the memory capacity of single GPU devices, necessitating quantization techniques for practical deployment. While NF4 (4-bit NormalFloat) quantization enables 4$\\times$ memory reduction, inference on current NVIDIA GPUs (e.g., Ampere A100) requires expen",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02434",
+      "snippet": "Compositional Neuro-Symbolic Reasoning — Anugyan Das, Omkar Ghugarkar, Vishvesh Bhat (2026). We study structured abstraction-based reasoning for the Abstraction and Reasoning Corpus (ARC) and compare its generalization to test-time approaches. Purely neural architectures lack reliable combinatorial generalization, while strictly symbolic systems struggle with perceptual grounding. We theref",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01787",
+      "snippet": "DEFT: Distribution-guided Efficient Fine-Tuning for Human Alignment — Liang Zhu, Feiteng Fang, Yuelin Bai (2026). Reinforcement Learning from Human Feedback (RLHF), using algorithms like Proximal Policy Optimization (PPO), aligns Large Language Models (LLMs) with human values but is costly and unstable. Alternatives have been proposed to replace PPO or integrate Supervised Fine-Tuning (SFT) and contrastive lear",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.engappai.2026.114122",
+      "snippet": "Versatile electromagnetic vortex beamforming for phased array using hybrid neural network-based modeling and optimization — Le Kang, Mengyao Dai, Hui Li (2026)",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.1109/TKDE.2026.3658627",
+      "snippet": "A Zero-Training Data Cleaning System With Large Language Models — Chen Yang, Kai Huang, Yue Wu (2026). Data cleaning (DC) is a crucial yet challenging step for many data engineering tasks. Traditional pre-configuration DC methods rely heavily on predefined rules or constraints, demanding significant domain knowledge and manual effort. While configuration-free DC approaches have been explored, they st",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.1109/TCAD.2025.3610062",
+      "snippet": "OpRA: Optimizing Resiliency Assessment for Deep Neural Networks — N. Bellarmino, Salvatore Barone, Salvatore Pappalardo (2026). Deep neural networks (DNNs) and especially convolutional neural networks (CNNs) are increasingly deployed in safety-critical domains, where rigorous reliability assessment is essential. Fault injection (FI) remains a widely adopted technique to evaluate DNN robustness under hardware faults. However,",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.1109/TETCI.2025.3642285",
+      "snippet": "MRM: Improving Multihop Reasoning Capability for LLMs With Multistage QA Retrieval — Wei Li, Yanqin Zhang, Guifang Sun (2026). Large Language Models (LLMs) continue to face significant challenges in improving their reasoning capabilities, particularly for knowledge-intensive multi-hop questions. Existing approaches attempt to address this hurdle through generating reasoning procedures or retrieving additional knowledge, whi",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.1109/JSSC.2026.3663603",
+      "snippet": "Adelia: A 4-nm LLM Processing Unit With Streamlined Dataflow and Dual-Mode Parallelism for Maximizing Hardware Efficiency — Sukbin Lim, Jung-Hoon Kim, Seungjae Moon (2026). The proliferation of large language models (LLMs) as cross-domain foundation models is fueled by aggressive scaling in both parameter counts and inference-time computation. The emergence of sophisticated reasoning models further accelerates this trend, demanding longer context windows and escalating",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00590",
+      "snippet": "UniMixer: A Unified Architecture for Scaling Laws in Recommendation Systems — Mingming Ha, Guanchen Wang, Linxun Chen (2026). In recent years, the scaling laws of recommendation models have attracted increasing attention, which govern the relationship between performance and parameters/FLOPs of recommenders. Currently, there are three mainstream architectures for achieving scaling in recommendation models, namely attention",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Positive endorsement",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00493",
+      "snippet": "A Reasoning-Enabled Vision-Language Foundation Model for Chest X-ray Interpretation — Yabin Zhang, Chong Wang, Yunhe Gao (2026). Chest X-rays (CXRs) are among the most frequently performed imaging examinations worldwide, yet rising imaging volumes increase radiologist workload and the risk of diagnostic errors. Although artificial intelligence (AI) systems have shown promise for CXR interpretation, most generate only final pr",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00715",
+      "snippet": "To Memorize or to Retrieve: Scaling Laws for RAG-Considerate Pretraining — Karan Singh, Michael Yu, Varun Gangal (2026). Retrieval-augmented generation (RAG) improves language model (LM) performance by providing relevant context at test time for knowledge-intensive situations. However, the relationship between parametric knowledge acquired during pretraining and non-parametric knowledge accessed via retrieval remains",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01220",
+      "snippet": "Universal YOCO for Efficient Depth Scaling — Yutao Sun, Li Dong, Tianzhu Ye (2026). The rise of test-time scaling has remarkably boosted the reasoning and agentic proficiency of Large Language Models (LLMs). Yet, standard Transformers struggle to scale inference-time compute efficiently, as conventional looping strategies suffer from high computational overhead and a KV cache that",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01025",
+      "snippet": "Fast and Accurate Probing of In-Training LLMs'Downstream Performances — Zhicheng Liu, Tianle Lun, Zhibin Wen (2026). The paradigm of scaling Large Language Models (LLMs) in both parameter size and test time has pushed the boundaries of AI capabilities, but at the cost of making the traditional generative evaluation paradigm prohibitively expensive, therefore making the latency of LLM's in-training downstream perfo",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.1109/TFUZZ.2026.3665818",
+      "snippet": "Auditing Partial Dataset Usage in Large Language Models via Fuzzy Membership Aggregation — Hongyu Zhu, Sichu Liang, Bofan Chen (2026). The remarkable capabilities of large language models (LLMs) are fueled by massive Internet-scale corpora. However, scraped data owners often do not consent to its use for training, raising significant legal and ethical concerns over copyright and privacy. Data auditing techniques seek to verify whet",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00801",
+      "snippet": "Routing-Free Mixture-of-Experts — Yilun Liu, Jinru Han, Sikuan Yan (2026). Standard Mixture-of-Experts (MoE) models rely on centralized routing mechanisms that introduce rigid inductive biases. We propose Routing-Free MoE which eliminates any hard-coded centralized designs including external routers, Softmax, Top-K and load balancing, instead encapsulating all activation f",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01106",
+      "snippet": "Inverse Design of Optical Multilayer Thin Films using Robust Masked Diffusion Models — Jonas Schaible, Asena Karolin Ozdemir, Charlotte Debus (2026). Inverse design of optical multilayer stacks seeks to infer layer materials, thicknesses, and ordering from a desired target spectrum. It is a long-standing challenge due to the large design space and non-unique solutions. We introduce \\texttt{OptoLlama}, a masked diffusion language model for inverse",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01279",
+      "snippet": "Sven: Singular Value Descent as a Computationally Efficient Natural Gradient Method — S. Bright-Thonney, T. R. Harvey, A. Lukas (2026). We introduce Sven (Singular Value dEsceNt), a new optimization algorithm for neural networks that exploits the natural decomposition of loss functions into a sum over individual data points, rather than reducing the full loss to a single scalar before computing a parameter update. Sven treats each d",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01302",
+      "snippet": "Scaling Reasoning Tokens via RL and Parallel Thinking: Evidence From Competitive Programming — Qianfan Zhang, Tianyu Guo, Xuandi Ren (2026). We study how to scale reasoning token budgets for competitive programming through two complementary approaches: training-time reinforcement learning (RL) and test-time parallel thinking. During RL training, we observe an approximately log-linear relationship between validation accuracy and the avera",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.01411",
+      "snippet": "Test-Time Scaling Makes Overtraining Compute-Optimal — Nicholas Roberts, Sung-Dae Cho, Zhiqi Gao (2026). Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.29262",
+      "snippet": "Grokking From Abstraction to Intelligence — Junjie Zhang, Zhen Shen, Gang Xiong (2026). Grokking in modular arithmetic has established itself as the quintessential fruit fly experiment, serving as a critical domain for investigating the mechanistic origins of model generalization. Despite its significance, existing research remains narrowly focused on specific local circuits or optimiz",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.29791",
+      "snippet": "Reasoning-Driven Synthetic Data Generation and Evaluation — Tim R. Davidson, Benoit Seguin, Enrico Bacis (2026). Although many AI applications of interest require specialized multi-modal models, relevant data to train such models is inherently scarce or inaccessible. Filling these gaps with human annotators is prohibitively expensive, error-prone, and time-consuming, leading model builders to increasingly cons",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28743",
+      "snippet": "Rethinking Language Model Scaling under Transferable Hypersphere Optimization — Liliang Ren, Yang Liu, Yelong Shen (2026). Scaling laws for large language models depend critically on the optimizer and parameterization. Existing hyperparameter transfer laws are mainly developed for first-order optimizers, and they do not structurally prevent training instability at scale. Recent hypersphere optimization methods constrain",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28015",
+      "snippet": "What an Autonomous Agent Discovers About Molecular Transformer Design: Does It Transfer? — Edward Wijaya (2026). Deep learning models for drug-like molecules and proteins overwhelmingly reuse transformer architectures designed for natural language, yet whether molecular sequences benefit from different designs has not been systematically tested. We deploy autonomous architecture search via an agent across thre",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28507",
+      "snippet": "The Unreasonable Effectiveness of Scaling Laws in AI — Chien-Ping Lu (2026). Classical AI scaling laws, especially for pre-training, describe how training loss decreases with compute in a power-law form. Their effectiveness has a basic and very practical sense: they make progress predictable, albeit at a declining rate. Yet their effectiveness is also unreasonable in two fur",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.29075",
+      "snippet": "The Future of AI is Many, Not One — Daniel J. Singer, Luca Garzino Demo (2026). The way we're thinking about generative AI right now is fundamentally individual. We see this not just in how users interact with models but also in how models are built, how they're benchmarked, and how commercial and research strategies using AI are defined. We argue that we should abandon this ap",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.1186/s10194-026-02346-7",
+      "snippet": "Forecasting migraine with time-series machine learning from mobile health data — Fahim Faisal, A. C. Poole, Antonios Danelakis (2026). Background Machine learning provides a powerful framework to model the complex patterns underlying migraine attack onset from real-world high dimensional datasets. In this study, we used machine learning to forecast headache days using mobile health (mHealth) data from a migraine biofeedback treatme",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://doi.org/10.64898/2026.03.27.714699",
+      "snippet": "DualLoc: Full-parameter fine-tuning of cascaded dual transformers for protein subcellular localization prediction — Yan Guang Chen, Wen-Yu Chung, Kuan Y. Chang (2026)",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28096",
+      "snippet": "Beyond Traffic Matrix: DELTA -- A DAG-Aware OCS Logical Topology Optimization for AIDCs — Niangen Ye, Jingyao Liu, Weiqiang Sun (2026). The rapid scaling of large language models (LLMs) exacerbates communication bottlenecks in AI data centers (AIDCs). To overcome this, optical circuit switches (OCS) are increasingly adopted for their superior bandwidth capacity and energy efficiency. However, their reconfiguration overhead precludes",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28823",
+      "snippet": "Time is Not Compute: Scaling Laws for Wall-Clock Constrained Training on Consumer GPUs — Yi Liu (2026). Scaling laws relate model quality to compute budget (FLOPs), but practitioners face wall-clock time constraints, not compute budgets. We study optimal model sizing under fixed time budgets from 5 minutes to 24 hours on consumer GPUs (RTX 4090). Across 70+ runs spanning 50M--1031M parameters, we find",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.27138",
+      "snippet": "ScoutAttention: Efficient KV Cache Offloading via Layer-Ahead CPU Pre-computation for LLM Inference — Qiuyang Zhang, Kai Zhou, Ding Tang (2026). Large language models encounter critical GPU memory capacity constraints during long-context inference, where KV cache memory consumption severely limits decode batch sizes. While existing research has explored offloading KV cache to DRAM, these approaches either demand frequent GPU-CPU data transfe",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.27438",
+      "snippet": "The Novelty Bottleneck: A Framework for Understanding Human Effort Scaling in AI-Assisted Work — Jacky Liang (2026). We propose a stylized model of human-AI collaboration that isolates a mechanism we call the novelty bottleneck: the fraction of a task requiring human judgment creates an irreducible serial component analogous to Amdahl's Law in parallel computing. The model assumes that tasks decompose into atomic",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26983",
+      "snippet": "Transparency as Architecture: Structural Compliance Gaps in EU AI Act Article 50 II — Vera Schmitt, Niklas Kruse, Premtim Sahitaj (2026). Art. 50 II of the EU Artificial Intelligence Act mandates dual transparency for AI-generated content: outputs must be labeled in both human-understandable and machine-readable form for automated verification. This requirement, entering into force in August 2026, collides with fundamental constraints",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26866",
+      "snippet": "LACON: Training Text-to-Image Model from Uncurated Data — Zhiyang Liang, Ziyu Wan, Hongyu Liu (2026). The success of modern text-to-image generation is largely attributed to massive, high-quality datasets. Currently, these datasets are curated through a filter-first paradigm that aggressively discards low-quality raw data based on the assumption that it is detrimental to model performance. Is the di",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26539",
+      "snippet": "How Open Must Language Models be to Enable Reliable Scientific Inference? — James A. Michaelov, Catherine Arnett, Tyler A. Chang (2026). How does the extent to which a model is open or closed impact the scientific inferences that can be drawn from research that involves it? In this paper, we analyze how restrictions on information about model construction and deployment threaten reliable inference. We argue that current closed models",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.26603",
+      "snippet": "Sustainability Is Not Linear: Quantifying Performance, Energy, and Privacy Trade-offs in On-Device Intelligence — Eziyo Ehsani, L. Giamattei, I. Malavolta (2026). The migration of Large Language Models (LLMs) from cloud clusters to edge devices promises enhanced privacy and offline accessibility, but this transition encounters a harsh reality: the physical constraints of mobile batteries, thermal limits, and, most importantly, memory constraints. To navigate",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25687",
+      "snippet": "On Neural Scaling Laws for Weather Emulation through Continual Training — Shashank Subramanian, Alexander Kiefer, Arnur Nigmetov (2026). Neural scaling laws, which in some domains can predict the performance of large neural networks as a function of model, data, and compute scale, are the cornerstone of building foundation models in Natural Language Processing and Computer Vision. We study neural scaling in Scientific Machine Learnin",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25040",
+      "snippet": "Intern-S1-Pro: Scientific Multimodal Foundation Model at Trillion Scale — Yi Zou, Dongsheng Zhu, Linchao Zhu (2026). We introduce Intern-S1-Pro, the first one-trillion-parameter scientific multimodal foundation model. Scaling to this unprecedented size, the model delivers a comprehensive enhancement across both general and scientific domains. Beyond stronger reasoning and image-text understanding capabilities, its",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25476",
+      "snippet": "How Class Ontology and Data Scale Affect Audio Transfer Learning — M. Milling, Andreas Triantafyllopoulos, Alexander Gebhard (2026). Transfer learning is a crucial concept within deep learning that allows artificial neural networks to benefit from a large pre-training data basis when confronted with a task of limited data. Despite its ubiquitous use and clear benefits, there are still many open questions regarding the inner worki",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25383",
+      "snippet": "CLIP-RD: Relational Distillation for Efficient CLIP Knowledge Distillation — J. Chung, Hanna Jang, ing Yang (2026). CLIP aligns image and text embeddings via contrastive learning and demonstrates strong zero-shot generalization. Its large-scale architecture requires substantial computational and memory resources, motivating the distillation of its capabilities into lightweight student models. However, existing CL",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02367",
+      "snippet": "Evaluating Small Language Models for Front-Door Routing: A Harmonized Benchmark and Synthetic-Traffic Experiment — Warren Johnson, Charles Lee (2026). Selecting the appropriate model at inference time -- the routing problem -- requires jointly optimizing output quality, cost, latency, and governance constraints. Existing approaches delegate this decision to LLM-based classifiers or preference-trained routers that are themselves costly and high-lat",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Direct quote / citation",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.24226",
+      "snippet": "UniScale: Synergistic Entire Space Data and Model Scaling for Search Ranking — Liren Yu, Caiyuan Li, Feiyi Dong (2026). Recent advances in Large Language Models (LLMs) have inspired a surge of scaling law research in industrial search, advertising, and recommendation systems. However, existing approaches focus mainly on architectural improvements, overlooking the critical synergy between data and architecture design",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.24594",
+      "snippet": "Polynomial Speedup in Diffusion Models with the Multilevel Euler-Maruyama Method — Arthur Jacot (2026). We introduce the Multilevel Euler-Maruyama (ML-EM) method compute solutions of SDEs and ODEs using a range of approximators $f^1,\\dots,f^k$ to the drift $f$ with increasing accuracy and computational cost, only requiring a few evaluations of the most accurate $f^k$ and many evaluations of the less c",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.24343",
+      "snippet": "Enhancing Efficiency and Performance in Deepfake Audio Detection through Neuron-level Dropin&Neuroplasticity Mechanisms — Yupei Li, Shuaijie Shao, M. Milling (2026). Current audio deepfake detection has achieved remarkable performance using diverse deep learning architectures such as ResNet, and has seen further improvements with the introduction of large models (LMs) like Wav2Vec. The success of large language models (LLMs) further demonstrates the benefits of",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.23998",
+      "snippet": "Sparse Growing Transformer: Training-Time Sparse Depth Allocation via Progressive Attention Looping — Yao Chen, Yilong Chen, Yin Yang (2026). Existing approaches to increasing the effective depth of Transformers predominantly rely on parameter reuse, extending computation through recursive execution. Under this paradigm, the network structure remains static along the training timeline, and additional computational depth is uniformly assig",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.24746",
+      "snippet": "Grokking as a Falsifiable Finite-Size Transition — Yuda Bi, Chenyu Zhang, Qiheng Wang (2026). Grokking -- the delayed onset of generalization after early memorization -- is often described with phase-transition language, but that claim has lacked falsifiable finite-size inputs. Here we supply those inputs by treating the group order $p$ of $\\mathbb{Z}_p$ as an admissible extensive variable a",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.24780",
+      "snippet": "Transformers in the Dark: Navigating Unknown Search Spaces via Bandit Feedback — Jungtaek Kim, Thomas Zeng, Ziqian Lin (2026). Effective problem solving with Large Language Models (LLMs) can be enhanced when they are paired with external search algorithms. By viewing the space of diverse ideas and their follow-up possibilities as a tree structure, the search algorithm can navigate such a search space and guide the LLM towar",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://doi.org/10.64898/2026.03.17.712398",
+      "snippet": "A Long-Context Generative Foundation Model Deciphers RNA Design Principles — Yanjie Huang, Guangye Lv, Anyue Cheng (2026)",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Academic citation",
+      "platform": "DOI / Journal"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22846",
+      "snippet": "CoMaTrack: Competitive Multi-Agent Game-Theoretic Tracking with Vision-Language-Action Models — Youzhi Liu, Linze Gao, Liu Liu (2026). Embodied Visual Tracking (EVT), a core dynamic task in embodied intelligence, requires an agent to precisely follow a language-specified target. Yet most existing methods rely on single-agent imitation learning, suffering from costly expert data and limited generalization due to static training envi",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22689",
+      "snippet": "Think 360{\\deg}: Evaluating the Width-centric Reasoning Capability of MLLMs Beyond Depth — Mingrui Chen, Hexiong Yang, Haogeng Liu (2026). In this paper, we present a holistic multimodal benchmark that evaluates the reasoning capabilities of MLLMs with an explicit focus on reasoning width, a complementary dimension to the more commonly studied reasoning depth. Specifically, reasoning depth measures the model's ability to carry out long",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.23626",
+      "snippet": "A Theory of LLM Information Susceptibility — Zhuo-Yang Song, H. Zhu (2026). Large language models (LLMs) are increasingly deployed as optimization modules in agentic systems, yet the fundamental limits of such LLM-mediated improvement remain poorly understood. Here we propose a theory of LLM information susceptibility, centred on the hypothesis that when computational resou",
+      "query": "Semantic Scholar citations",
+      "usage_type": "News mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21862",
+      "snippet": "Holistic Scaling Laws for Optimal Mixture-of-Experts Architecture Optimization — Weilin Wan, Jin Han, Weizhong Zhang (2026). Scaling laws for Large Language Models govern macroscopic resource allocation, yet translating them into precise Mixture-of-Experts (MoE) architectural configurations remains an open problem due to the combinatorially vast design space. Existing MoE scaling studies are constrained by experimental bu",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22075",
+      "snippet": "Autoregressive vs. Masked Diffusion Language Models: A Controlled Comparison — Caio Vicentino (2026). We present a controlled empirical comparison between autoregressive (AR) and masked diffusion (MDLM) language models. Both models are trained on identical data (50M tokens from TinyStories), identical compute budget (20,000 steps, batch size 32, sequence length 512), and identical hardware (NVIDIA H",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21690",
+      "snippet": "AI Token Futures Market: Commoditization of Compute and Derivatives Contract Design — Yicai Xing (2026). As large language models (LLMs) and vision-language-action models (VLAs) become widely deployed, the tokens consumed by AI inference are evolving into a new type of commodity. This paper systematically analyzes the commodity attributes of tokens, arguing for their transition from intelligent service",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22214",
+      "snippet": "Evaluating the Reliability and Fidelity of Automated Judgment Systems of Large Language Models — Tom Biskupski, Stephan Kleber (2026). A Large Language Model (LLM) as judge evaluates the quality of victim Machine Learning (ML) models, specifically LLMs, by analyzing their outputs. An LLM as judge is the combination of one model and one specifically engineered judge prompt that contains the criteria for the analysis. The resulting a",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22017",
+      "snippet": "AdditiveLLM2: A Multi-modal Large Language Model for Additive Manufacturing — P.A. Pak, A. Farimani (2026). This work presents AdditiveLLM2 a multi-modal, domain adapted large language model built upon the instruction tuned variant of the Gemma 3 model using a relatively small dataset of around 50 million tokens. The dataset (AdditiveLLM2-OA) consists of open-access additive manufacturing journal articles",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21795",
+      "snippet": "Take the Train: Africa at the Crossroad of Modern AI — C'edric Manouan, M. Anagbah, N’guessan Yves-Roland Douha (2026). Africa's participation in modern AI development is constrained by severe infrastructural and policy gaps. Important barriers include limited access to high-performance computing (HPC), restricted cloud access due to payment system mismatches, volatile exchange rates, and strict data sovereignty laws",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21725",
+      "snippet": "CurvZO: Adaptive Curvature-Guided Sparse Zeroth-Order Optimization for Efficient LLM Fine-Tuning — Shuo Wang, Ziyu Chen, Mingni Tang (2026). Fine-tuning large language models (LLMs) with backpropagation achieves high performance but incurs substantial memory overhead, limiting scalability on resource-constrained hardware. Zeroth-order (ZO) optimization provides a memory-efficient alternative by relying solely on forward passes, yet it ty",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22367",
+      "snippet": "Reasoner-Executor-Synthesizer: Scalable Agentic Architecture with Static O(1) Context Window — Ivan Dobrovolskyi (2026). Large Language Models (LLMs) deployed as autonomous agents commonly use Retrieval-Augmented Generation (RAG), feeding retrieved documents into the context window, which creates two problems: the risk of hallucination grows with context length, and token cost scales linearly with dataset size. We pro",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22538",
+      "snippet": "The FERMIACC: Agents for Particle Theory — Prateek Agrawal, Nathaniel Craig, Amalia Madden (2026). We present the FERMIACC, a scaffolded reasoning model built on OpenAI agents designed to autonomously generate and quantitatively validate theory hypotheses for high energy physics data at scale",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.22593",
+      "snippet": "Language Models Can Explain Visual Features via Steering — Javier Ferrando, Enrique Lopez-Cuena, Pablo A. Martin-Torres (2026). Sparse Autoencoders uncover thousands of features in vision models, yet explaining these features without requiring human intervention remains an open challenge. While previous work has proposed generating correlation-based explanations based on top activating input examples, we present a fundamenta",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21606",
+      "snippet": "mSFT: Addressing Dataset Mixtures Overfitting Heterogeneously in Multi-task SFT — Woosung Koh, Jeyoung Jeon, Youngjin Song (2026). Current language model training commonly applies multi-task Supervised Fine-Tuning (SFT) using a homogeneous compute budget across all sub-datasets. This approach is fundamentally sub-optimal: heterogeneous learning dynamics cause faster-learning tasks to overfit early while slower ones remain under",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Critical discussion",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21191",
+      "snippet": "On the Role of Batch Size in Stochastic Conditional Gradient Methods — R. Islamov, Roman Machácek, Aurélien Lucchi (2026). We study the role of batch size in stochastic conditional gradient methods under a $\\mu$-Kurdyka-{\\L}ojasiewicz ($\\mu$-KL) condition. Focusing on momentum-based stochastic conditional gradient algorithms (e.g., Scion), we derive a new analysis that explicitly captures the interaction between stepsiz",
+      "query": "Semantic Scholar citations",
+      "usage_type": "General mention",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.21438",
+      "snippet": "PROMPT2BOX: Uncovering Entailment Structure among LLM Prompts — Neeladri Bhuiya, S. Dasgupta, Andrew McCallum (2026). To discover the weaknesses of LLMs, researchers often embed prompts into a vector space and cluster them to extract insightful patterns. However, vector embeddings primarily capture topical similarity. As a result, prompts that share a topic but differ in specificity, and consequently in difficulty,",
+      "query": "Semantic Scholar citations",
+      "usage_type": "Positive endorsement",
+      "platform": "arXiv"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=22402079",
+      "snippet": "Scaling Laws for Neural Language Models [3 points]",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=31928058",
+      "snippet": "Scaling Laws for Neural Language Models [2 points]",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=37937336",
+      "snippet": "Consortium launched to build the largest open LLM [0 points] More data, more parameters, more compute all result in a better model per \"Scaling Laws for Neural Language Models\" https://browse.arxiv.org/pdf/2001.08361v1.pdf Largeness is a valid goal.",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=34646317",
+      "snippet": "Ask HN: What were the papers on the list Ilya Sutskever gave John Carmack? [0 points] J. Kaplan, S. McCandlish, T. Henighan, T. B. Brown, B. Chess, R. Child, S. Gray, A. Radford, J. Wu, and D. Amodei. Scaling laws for neural language models. arXiv preprint arXiv:2001.08361, 2020. and multiple follow-ups",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=34557589",
+      "snippet": "Transcending Scaling Laws with 0.1% Extra Compute [0 points] They talk specifically of scaling laws investigated in papers like OpenAI's \"Scaling Laws for Neural Language Models\" (2020)[1] and Deepmind's \"An empirical analysis of compute-optimal large language model training\" (2022)[2] which showed that, as far as we could see at the time, for any sensibly designed language model nuances of architecture do not matter nearly as much as the sheer scale of the model, amount of compute spent on trai",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=30911170",
+      "snippet": "Pathways Language Model (PaLM): Scaling to 540B parameters [0 points] Scaling Laws for Neural Language Models - https://arxiv.org/abs/2001.08361",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=29690269",
+      "snippet": "Papers with Code [0 points] Transformer based architectures and unsupervised pre-training are achieving state of the art results across multiple modalities including NLP, CV, speech recognition, genomics, physics etc - so here's my must read list of recent papers on the topics (along with some of my notes). Happy holidays! [1] Attention Is All You Need (2017) https://paperswithcode.com/paper/attention-is-all-you-need Introduced the Transformer architecture and applied it to NLP tasks. [2] The An",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Positive endorsement",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=28838745",
+      "snippet": "Megatron-Turing NLG 530B, the World’s Largest Generative Language Model [0 points] > What's worse, the trend to supersize language models is never justified, either theoretically (ha ha) or empirically in the relevant literature What? That's absurd. Large language models are motivated by empirical scaling law. It is actually better justified than other ML research. Scaling Laws for Neural Language Models: https://arxiv.org/abs/2001.08361",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=28217528",
+      "snippet": "Program Synthesis with Large Language Models [0 points] First, congratulations to you and the other authors - this is a very informative and accessible paper with impressive results. > On both datasets, we find that synthesis performance scales log-linearly with model size This \"scaling law\" observation is starting to become a major trend in NLP [1] and other other modalities such as speech recognition [2] and protein structure/function prediction [3]. Do you have any insight or commentary to of",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Positive endorsement",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=25308165",
+      "snippet": "No, DeepMind has not solved protein folding [0 points] > as long as you have a sane set of regularization techniques (or have we even ditched those too?). Maybe. In the context of natural language at least, Transformers require less and less data to reach the same result as you increase the number of parameters. No regularization needed. See Figure 2 in the paper Scaling Laws for Neural Language Models (2001.08361). It's quite odd. Who knows if that will hold for other domains, like protein fold",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=24455443",
+      "snippet": "Transformers Are Graph Neural Networks [0 points] It's interesting watching these attempts to understand Transformers. Are they Graph networks? Are they Hopfields networks? Are they convolutions? There was this research: https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreti... Turns out, GPT-like architectures appear to use the same representation throughout all the layers. So you can use the final head layer as a lens to see what words the network is thinking of as it ... \"thinks\". That'",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Critical discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=22147970",
+      "snippet": "Talking to myself: how I trained GPT2-1.5b for rubber ducking using my chat data [0 points] For example, look at OpenAI's latest paper on scaling Transformers \"Scaling Laws for Neural Language Models\" https://arxiv.org/abs/2001.08361 , Kaplan et al 2020: larger models are better, in the entire range they test up to billion-parameter models, in pretty much every way - they need hardly any additional data, achieve lower losses, they train faster, they can be parallelized better, and they're even m",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=42852360",
+      "snippet": "DeepSeek could represent Nvidia CEO Jensen Huang's worst nightmare [0 points] It is the end of neural language model scaling as described here: https://openai.com/index/scaling-laws-for-neural-language-mo... And a return to more normal world where progress comes from refinement of algorithms and approach rather than brute force compute. Deepseek is just the poster child.",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=41848104",
+      "snippet": "Zamba2-7B [0 points] The short answer is that there is nothing magic about these numbers. Having somewhat standard sizes in the different ranges (7B for smaller models, for example) makes comparing the different architecture and training techniques more straightforward. It's more of a priority for some teams than others. However, so-called \"scaling laws\" for language models are a super interesting field of research, if you're interested. I'd recommend OpenAI's 2020 paper as a good start: https:/",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Positive endorsement",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=34424899",
+      "snippet": "Meet “Claude”: Anthropic’s rival to ChatGPT [0 points] I meant the blog post. https://openai.com/blog/chatgpt/ > The model is often excessively verbose and overuses certain phrases, such as restating that it’s a language model trained by OpenAI. These issues arise from biases in the training data (trainers prefer longer answers that look more comprehensive) and well-known over-optimization issues.12 > Stiennon, Nisan, et al. “Learning to summarize with human feedback.” Advances in Neural Informa",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=39054783",
+      "snippet": "EarthPT: A time series transformer foundation model [0 points] Wanted to share the code release of EarthPT, a model that predicts future satellite observations in a zero shot setting! I'm the first author so please shoot any questions you have at me. EarthPT is a 700 million parameter decoding transformer foundation model trained in an autoregressive self-supervised manner and developed specifically with EO use-cases in mind. EarthPT can accurately predict future satellite observations across th",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=30471425",
+      "snippet": "Is Grammarly a keylogger? What can you do about it? [0 points] I'm on the team at Sapling Intelligence, a deep-learning AI Writing Assistant. A lot of privacy and security conscious folks don't like the idea of a keylogger, so we have self-hosted/on-premise/cloud-premise options for businesses. We have a list of available offerings here: https://sapling.ai/comparison/onprem . Sapling deployments can also be configured for no data retention, sacrificing some model customization. Cost-wise, it doe",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=16534466",
+      "snippet": "Learning Memory Access Patterns [0 points] Abstract -> The explosion in workload complexity and the recent slow-down in Moore's law scaling call for new approaches towards efficient computing. Researchers are now beginning to use recent advances in machine learning in software optimizations, augmenting or replacing traditional heuristics and data structures. However, the space of machine learning for computer hardware architecture is only lightly explored. In this paper, we demonstrate the poten",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=40757547",
+      "snippet": "Getting 50% (SoTA) on Arc-AGI with GPT-4o [0 points] There's a world of difference between machine teaching approaches that can create a less complex model from a more capable one and bootstrapping a more capable model from synthetic data. And don't get me wrong, it's still very useful to be able to distill models in this way! Like it's in many cases low hanging fruit for optimizing the parameter count or other resource bottlenecks of the models in question. Maybe the original learned representa",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Critical discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=33753104",
+      "snippet": "AI Art Panic [0 points] Similar to Moore's law, \"transformer\" deep neural nets have been found to following scaling laws[0]. This means the faster and more VRAM your GPU's have, the better a model you can train \"for free\". Training models from scratch only works with massive (labeled) datasets covering a massive data distribution. With language models, the datasets being used are quickly approaching \"all known written text\" sizes. Training a model from scratch on Microsoft's internal code, with ",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=43407692",
+      "snippet": "Past and Present Futures of User Interface Design [0 points] This comment was honestly shocking. I spent more than 15 minutes trying to think of the first thing to bring up, but there were too many things to go through. I went on a tangent about belief bubbles then thought replying was too taxing, then I realised that not replying may be contributing to the problem of those bubbles existing in the first place. So I'll try to keep my reply brief and succinct enough to not lose my mind by just res",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=42380167",
+      "snippet": "AmpereOne: Cores Are the New MHz [0 points] I'm late to the party due to work and holiday gatherings, but just wanted to say that this is the first glimmer of hope on the horizon in 25 years. The slowing down of Moore's law was well-understood by the time I was graduating from college with my Electrical and Computer Engineering (ECE) degree in 1999. The DEC Alpha was 700 MHz and they had GHz chips in labs, but most of us assumed that getting past 3-4 GHz was going to be difficult or impossible d",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=39851558",
+      "snippet": "Ask HN: What things are happening in ML that we can't hear over the din of LLMs? [0 points] So, from the perspective I have within the subfield I work in, explainable AI (XAI), we're seeing a bunch of fascinating developments. First, as you mentioned, Rudin continues to prove that the reason for using AI/ML is that we don't understand the problem well enough; otherwise we wouldn't even think to use it! So, pushing our focus to better understand the problem, and then levy ML concepts and techniqu",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=36106853",
+      "snippet": "Superintelligence: An idea that eats smart people (2016) [0 points] No but two LLMs have created a \"baby LLM\" that speaks fluent, yet 5 y.o. English, and only has 10M weights. This breaks the barrier in terms of minimal size for language fluency. Can even do reasoning and has the same scaling laws. GPT-3.5, let's call her mommy, created small stories. The small model trained on this 2M tiny story dataset. Then it was evaluated with GPT-4 (daddy). So no need for humans in either dataset generatio",
+      "query": "HN: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=34686313",
+      "snippet": "Ask HN: How “real” are AI scaling laws? [1 points, 1 comments] My main question is why would scaling lead to intelligent behavior in an AI and how and why would it generate that intelligent behavior? For this explanation I'm assuming that scaling can lead to an AGI and superintelligent behavior, as some AI engineers claim. Using OpenAI's paper for the base: https://arxiv.org/pdf/2001.08361.pdf You basically have 3 things, compute, dataset and parameter size. The parameters as far as I understand",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=47259998",
+      "snippet": "Jensen Huang says Nvidia is pulling back from OpenAI and Anthropic [0 points] Better slop. The effect that these systems get better as you scale up [0] is real you know. [0]: https://arxiv.org/pdf/2001.08361",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=46999857",
+      "snippet": "The Problem with LLMs [0 points] Fine, that's fair. I believe the statement that you made is countered by my claim, which is: Theorem. For any tolerance epsilon > 0, there exists a transformer neural network of sufficient size that follows, up to the factor epsilon, the policy that most optimally achieves arbitrary goals in arbitrary stochastic environments. Proof (sketch). For any stochastic environment with a given goal, there exists a model that maximizes expected return under this goal (not ",
+      "query": "HN: 2001.08361",
+      "usage_type": "Critical discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=44842355",
+      "snippet": "GPU-rich labs have won: What's left for the rest of us is distillation [0 points] It wasn't a lie, it was a misrepresentation of the total cost. It's not hard to calculate the cost of the training though. It takes 6 * active parameters * tokens flops[1]. To get number of seconds you can divide by Flops/s * MFU, where MFU is around 45% for H100 for large enough models[2]. [1]: https://arxiv.org/abs/2001.08361 [2]: https://github.com/facebookresearch/lingua",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=43265315",
+      "snippet": "\"It's a lemon\"–OpenAI's largest AI model ever arrives to mixed reviews [0 points] > The new model seems to prove that longstanding rumors of diminishing returns in training unsupervised-learning LLMs were correct and that the so-called \"scaling laws\" cited by many for years have possibly met their natural end. The commonly-cited scaling laws[0] predict diminishing returns from scale. Fairly uncontroversial for instance that going from 1 GPU to 2 GPUs gives a larger improvement than going from 10",
+      "query": "HN: 2001.08361",
+      "usage_type": "Direct quote / citation",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=42843543",
+      "snippet": "The impact of competition and DeepSeek on Nvidia [0 points] This is the canonical paper. Nothing I've seen seems to indicate the curves are flattening, you can ask \"scaling what\" but the trend is clear. https://arxiv.org/pdf/2001.08361",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=42026219",
+      "snippet": "AMD Open-Source 1B OLMo Language Models [0 points] You require 6 * parameter * token flops[1] to train LLM. Which means (flop/s of H100 * MFU) / (6 * parameter) token per second. Assuming MFU of 40%, it is (1000 * 10^12 * 0.4) / (6 * 10^9) token/sec = 67,000 token/sec. This repo[2] by Meta achieves 48% MFU, or 80k token/second. [1]: https://arxiv.org/pdf/2001.08361 [2]: https://github.com/facebookresearch/lingua",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=41809830",
+      "snippet": "Understanding the Limitations of Mathematical Reasoning in LLMs [0 points] >if your methodology is flawed you aren't gonna get any more significant returns. The problem with this statement is that predictions made about scaling 5 years ago have held true[1]. We keep adding parameters, adding compute, and the models keep getting more capable. The flaws of LLM's from 2024 are not what is relevant. Just like the flaws of LLMs from 2021 were not relevant. What is relevant is the rate of change, and ",
+      "query": "HN: 2001.08361",
+      "usage_type": "Critical discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=41662144",
+      "snippet": "OpenAI in throes of executive exodus as three walk at once [0 points] >I think the data will show that it is going to take logarithmic costs in either train-time or inference-time for linear or even sub-linear improvements. The data already shows this, it's a well-established result: https://arxiv.org/abs/2001.08361 . Well, less established for inference-time compute, but OpenAI even said they saw the same thing for inference compute in their release post for o1. But there's still room for at le",
+      "query": "HN: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=41659199",
+      "snippet": "OpenAI to Become For-Profit Company [0 points] > New LLMs don't even rely that much on that aforementioned older architecture Don’t they all indicate being based on the transformer architecture? > not entirely because of transformers but because of the hardware Kaplan et al. 2020[0] (figure 7, §3.2.1) shows that LSTMs, the leading language architecture prior to transformers, scaled worse because they plateau’ed quickly with larger context. [0]: https://arxiv.org/abs/2001.08361",
+      "query": "HN: 2001.08361",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://news.ycombinator.com/item?id=22197251",
+      "snippet": "Deep Transformer Models for Time Series: The Influenza Prevalence Case [2 points]",
+      "query": "HN: url=https://arxiv.org/abs/2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Hacker News"
+    },
+    {
+      "url": "https://www.reddit.com/r/ResearchML/comments/1sb9hxj/listen_scaling_laws_for_neural_language_models/",
+      "snippet": "Listen: Scaling Laws for Neural Language Models [1 upvotes, 0 comments] Hey, here you can listen to an explained version of the scaling laws paper.",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/ListenDock/comments/1s8vozt/listen_scaling_laws_for_neural_language_models/",
+      "snippet": "Listen: Scaling Laws for Neural Language Models [1 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/DebateAnAtheist/comments/1owlp1e/50_pieces_of_evidence_for_intelligent_design/",
+      "snippet": "50+ Pieces of Evidence for Intelligent Design  **Context:**\n\nAfter a previous post that fully clarified evidence and belief here:\n\n[https://www.reddit.com/r/DebateAnAtheist/comments/1iauovd/comment/m9e4c36/](https://www.reddit.com/r/DebateAnAtheist/comments/1iauovd/comment/m9e4c36/)\n\n**TL;DR** This post aims to highlight 50 pieces of evidence for intelligent design: 3 main, 1 macro, and 46 minor evidence points based on empirical observation of structure. Additionally, it formalizes induction an",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/xbeat_ml/comments/1fhq5t2/scaling_laws_for_neural_language_models_in_python/",
+      "snippet": "Scaling Laws for Neural Language Models in Python [1 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/YUROP/comments/1eqog84/we_need_european_patriotism_and_we_need_it_now/",
+      "snippet": "We need European patriotism, and we need it now. [686 upvotes, 144 comments] I will set out my own thoughts on why European unity is indispensable to protect both the sovereignty of nations and the political agency of citizens. I apologise in advance for any misunderstandings related to translation and for the length. I'm a philosophy graduate and I've tried to explore areas outside my field, but I might have made a few mistakes along the way.\n\nThe first and simplest non-moral definition of free",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Critical discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/mlscaling/comments/1dzv29v/navigating_scaling_laws_compute_optimality_in/",
+      "snippet": "Navigating Scaling Laws: Compute Optimality in Adaptive Model Training, Anagnostidis et al. 2024 [5 upvotes, 0 comments] **Paper:** [https://openreview.net/pdf?id=3KxPo62PYn](https://openreview.net/pdf?id=3KxPo62PYn)\n\n**Abstract** (emphasis mine)**:** \n\n&gt;In recent years, the state-of-the-art in deep learning has been dominated by very large models that have been pre-trained on vast amounts of data. The paradigm is very simple: investing more computational resources (optimally) leads to better",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/singularity/comments/jkmkhs/neural_scaling_laws_and_gpt3_what_gpt3_has_done/",
+      "snippet": "Neural Scaling Laws and GPT-3 | What GPT-3 has done for text is going to follow for pretty much every task— video synthesis, math, multimodal understanding, etc. There are nice, perfect scaling laws (almost too perfect) linking error, dataset size, compute budget, number of parameters [34 upvotes, 23 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/HFY/comments/12l3zhm/void_predators_chapter_46/",
+      "snippet": "Void Predators Chapter 46 [1139 upvotes, 116 comments] [Wiki](https://www.reddit.com/r/hfy/wiki/series/void_predators) \\- [Timeline](https://www.reddit.com/r/HFY/comments/xs8ojb/void_predators_a_timeline_of_modern_terran_history/) \\- [First](https://www.reddit.com/r/HFY/comments/r874fn/void_predators_chapter_1/) \\- [Previous](https://www.reddit.com/r/HFY/comments/120ulpf/void_predators_chapter_45/) \\- [Next](https://www.reddit.com/r/HFY/comments/14tazhc/void_predators_chapter_47/)\n\nSergeant Moor",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/HighStrangeness/comments/1s1qtx1/plasma_psywar_and_the_nhi_prison_break/",
+      "snippet": "Plasma, PSYWAR, and the NHI Prison Break [114 upvotes, 52 comments] ## The Pattern Nobody Talks About\n\nSrinivasa Ramanujan, one of the greatest mathematicians who ever lived, said a goddess wrote formulas on his tongue in his sleep. He didn't derive his theorems. He received them. Mathematicians are still proving his results a century later.\n\nNikola Tesla said he received complete technical diagrams in flashes of light. Fully formed. Three dimensions. Precise measurements. He didn't iterate. The",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/MachineLearning/comments/ylblzi/n_ethan_caballero_broken_neural_scaling_laws_new/",
+      "snippet": "[N] Ethan Caballero: Broken Neural Scaling Laws | New Podcast Episode  video: [https://www.youtube.com/watch?v=SV87S38M1J4](https://www.youtube.com/watch?v=SV87S38M1J4)\n\nOUTLINE: [00:00](https://www.youtube.com/watch?v=SV87S38M1J4&amp;t=0s) Introduction [00:50](https://www.youtube.com/watch?v=SV87S38M1J4&amp;t=50s) The \"Scale Is All You Need\" Movement [01:07](https://www.youtube.com/watch?v=SV87S38M1J4&amp;t=67s) A Functional Form Predicting Every Scaling Behavior [01:40](https://www.youtube.com",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/Fantasy/comments/14fnour/do_novelists_need_to_worry_about_being_replaced/",
+      "snippet": "Do Novelists Need to Worry About Being Replaced by AI? [286 upvotes, 230 comments] *(TL;DR: No.)*  \n\n\nBeen a while since I've done a big essay on r/Fantasy. Buckle in, this one's a *really* long ride that dives into technology, corporate fraud, and questions of art. Absolutely no judgement if you don't have time for 3k words from a random indie author.\n\nThere is, frankly, an exhausting amount of handwringing from the media about AI- Large Language Models- replacing authors lately. Full of truly ",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/mlscaling/comments/jl143s/scaling_laws_for_neural_language_models_kaplan_et/",
+      "snippet": "\"Scaling Laws for Neural Language Models\", Kaplan et al 2020 [optimal approach: train as large NN models as possible for few steps] [11 upvotes, 3 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/HFY/comments/84kyvx/the_magineer_chapter_29/",
+      "snippet": "The Magineer - Chapter 29 [1062 upvotes, 134 comments] # Chapter 29\n[First](https://www.reddit.com/r/HFY/comments/6oqstg/oc_the_magineer_chapter_1/)\n\n[Previous](https://www.reddit.com/r/HFY/comments/83mvqa/the_magineer_chapter_28/)\n\n[Patreon](https://www.patreon.com/voodooattack?)\n\n[Discord](https://discord.gg/KDFDbVj)\n\n[Visit the GameLit Society Group on Facebook!](https://www.facebook.com/groups/GameLitSociety/)\n\n[SPELL Programming Expression and Logic Language Specification](https://gist.gith",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "News mention",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/PaperArchive/comments/k388ju/200108361_scaling_laws_for_neural_language_models/",
+      "snippet": "[2001.08361] Scaling Laws for Neural Language Models [2 upvotes, 1 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/MachineLearning/comments/et5t9a/r_scaling_laws_for_neural_language_models/",
+      "snippet": "[R] Scaling Laws for Neural Language Models [10 upvotes, 2 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/MediaSynthesis/comments/etlv11/scaling_laws_for_neural_language_models_kaplan_et/",
+      "snippet": "\"Scaling Laws for Neural Language Models\", Kaplan et al 2020 {OA} [optimal approach: train as large NN models as possible for few steps] [9 upvotes, 2 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/mlscaling/comments/jl3lc7/scaling_laws_for_neural_language_models_kaplan_et/",
+      "snippet": "\"Scaling Laws for Neural Language Models\", Kaplan et al 2020 (optimal approach: train as large NN models as possible for few steps) [2 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/ControlProblem/comments/exapsc/200108361_scaling_laws_for_neural_language_models/",
+      "snippet": "[2001.08361] Scaling Laws for Neural Language Models (OpenAI) [14 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/LLMPhysics/comments/1pvg2an/axiomatic_pattern_ontology_a_metaphysical_reality/",
+      "snippet": "Axiomatic Pattern Ontology - a Metaphysical Reality  I try to describe here a physical reality through the lens of informational organization. It integrates Algorithmic Information Theory with current OSR traditions. It sees “patterns” or information emerging as a dynamical system through operators rather than a static one. APO sees the universe as code running on special substrate that enables Levin searches.\nAll information is organized in three ways.\n\n⊗ **Differentiation operator** - defined ",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/ResearchML/comments/et5tcp/xpost_rmachinelearning_r_scaling_laws_for_neural/",
+      "snippet": "(X-Post r/MachineLearning) [R] Scaling Laws for Neural Language Models [2 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/TopOfArxivSanity/comments/evzfti/scaling_laws_for_neural_language_models/",
+      "snippet": "Scaling Laws for Neural Language Models [1 upvotes, 0 comments]",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/UFOs/comments/1s2hppp/plasma_projections_psyops_tech_for_access_and_the/",
+      "snippet": "Plasma Projections, PSYOPs, Tech for Access, and the NHI Prison Break [1 upvotes, 33 comments] # Plasma Projections, PSYOPs, Tech for Access, and the NHI Prison Break\n\nTLDR; The lights in the sky might be plasma, not craft. Some are military, some are natural, some may be projected by something we don't understand yet. Every tradition on Earth warns against opening channels to non-human intelligence. The modern UFO contact community is doing exactly that and calling it enlightenment. The most im",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/NatureofPredators/comments/162mme9/an_introduction_to_terran_zoology_chapter_23/",
+      "snippet": "An Introduction to Terran Zoology – Chapter 23 [993 upvotes, 41 comments] Credit to u/SpacePaladin15 for the NOP Universe.\n\nSorry for the extra week it took to get this one out but it was for a good reason and I hope you will enjoy the following crossover.\n\nThank you u/Eager_Question for writing this with me. For those who don’t know Eager writes Love Languages, which I highly recommend, and it was an awesome experience to get to work on this with them!\n\n[\\[First\\]](https://www.reddit.com/r/Natu",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/mlscaling/comments/1nz24ff/introducing_bdh_baby_dragon_hatchlinga/",
+      "snippet": "Introducing: BDH (Baby Dragon Hatchling)—A Post-Transformer Reasoning Architecture Which Purportedly Opens The Door To Native Continuous Learning | \"BHD creates a digital structure similar to the neural network functioning in the brain, allowing AI ​​to learn and reason continuously like a human.\" [99 upvotes, 45 comments] #####Abstract:\n\n&gt;The relationship between computing systems and the brain has served as motivation for pioneering theoreticians since John von Neumann and Alan Turing. Unif",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/MachineLearning/comments/kqazpd/d_why_im_lukewarm_on_graph_neural_networks/",
+      "snippet": "[D] Why I'm Lukewarm on Graph Neural Networks [685 upvotes, 105 comments] **TL;DR:** GNNs can provide wins over simpler embedding methods, but we're at a point where other research directions matter more\n\nI also posted it on my [blog here](https://www.singlelunch.com/2020/12/28/why-im-lukewarm-on-graph-neural-networks/), has footnotes, a nicer layout with inlined images, etc.\n\n-----------\n\nI'm only lukewarm on Graph Neural Networks (GNNs). There, I said it.\n\nIt might sound crazy GNNs are one of ",
+      "query": "Reddit: Scaling Laws for Neural Language Models",
+      "usage_type": "Summary / paraphrase",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/antiai/comments/1rymlrs/why_the_singularity_doesnt_even_work_according_to/",
+      "snippet": "Why \"the singularity\" doesn't even work, according to economics &amp; data science (with supporting research papers) [3 upvotes, 36 comments] Just like Christians before them, the AI cult also believes in the coming of their God. In this case, their God is obviously an AI, although a supra-human, super-intelligent one. Every investment is a little sacrifice in the altar of the \"Singularity\" as they call it. This is nothing marginal, as Elon Musk himself has his own profile picture at his private",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "Direct quote / citation",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/MachineLearning/comments/i49jf8/d_biggest_roadblock_in_making_gpt4_a_20_trillion/",
+      "snippet": "[D] Biggest roadblock in making \"GPT-4\", a ~20 trillion parameter transformer [356 upvotes, 138 comments] So I found this paper, [https://arxiv.org/abs/1910.02054](https://arxiv.org/abs/1910.02054) which pretty much describes how the GPT-3 over GPT-2 gain was achieved, 1.5B -&gt; 175 billion parameters\n\n# Memory\n\n&gt;Basic data parallelism (DP) does not reduce memory per device, and runs out of memory for models with more than 1.4B parameters on current generation of GPUs with 32 GB memory\n\nThe ",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/aiwars/comments/1ry83ty/why_the_singularity_doesnt_even_work_according_to/",
+      "snippet": "Why the singularity doesn't even work, according to economics and data science (with supporting research papers)  PS: **at** [\"r/singularity\", for pointing this out](https://www.reddit.com/r/singularity/comments/1ry71u3/why_the_singularity_doesnt_even_work_according_to/), they **deleted my post with no explanation**. Truth hurts cultish feelings...\n\nJust like Christians before them, the AI cult also believes in the coming of their God. In this case, their God is obviously an AI, although a supra",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "Direct quote / citation",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1p80t1m/whats_the_point/",
+      "snippet": "What's the point? [2 upvotes, 26 comments] The largest tech companies in the world have been pouring hundreds of billions if not trillions into new data centers focused on AI compute. I'm just really confused as to why.\n\n1. Current AI technology improves at a drastically slower rate with more compute and data. It would make more sense If the money was going to research entirely new compute methods instead of throwing more compute at a technology that is mostly mature.\n\n2. Demand for cloud based ",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1hftf75/my_take_on_the_post_pretraining_world_ilyas_talk/",
+      "snippet": "My take on the Post Pretraining world - Ilya’s talk [178 upvotes, 40 comments] Hey r/LocalLLaMA! You might have heard Ilya Sutskever - the famed computer scientist from OpenAI, now at SSI saying we're in the post pretraining world. I don't normally post in long form, but I wanted to post my thoughts on his talk!\n\nIlya is implying we need to find **something else to scale** \\- the [brain–body mass ratio graph](https://en.wikipedia.org/wiki/Brain%E2%80%93body_mass_ratio) in the talk showed human i",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/quant/comments/1mtg2we/whats_your_favorite_paper_of_all_time/",
+      "snippet": "What's your favorite paper of all time? [90 upvotes, 22 comments] Curious to see what people like to read, not necessarily in this field, could be in any field. One of my favorite papers is this one: [https://arxiv.org/pdf/1906.01563](https://arxiv.org/pdf/1906.01563) \n\nI was specifically impressed with how the HNN learned conservation laws from (synthetic) video footage.",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "News mention",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://www.reddit.com/r/learnmachinelearning/comments/10fw2df/gpt4_will_be_500x_smaller_than_people_think_here/",
+      "snippet": "GPT-4 Will Be 500x Smaller Than People Think - Here Is Why [335 upvotes, 47 comments] &amp;#x200B;\n\n[Number Of Parameters GPT-3 vs. GPT-4](https://preview.redd.it/yio0v3zqgyca1.png?width=575&amp;format=png&amp;auto=webp&amp;s=a2ee034ce7ed48c9adc1793bfdb495e0f0812609)\n\nThe rumor mill is buzzing around the release of GPT-4.\n\nPeople are predicting the model will have 100 trillion parameters. That’s a *trillion* with a “t”.\n\nThe often-used graphic above makes GPT-3 look like a cute little breadcrumb",
+      "query": "Reddit: 2001.08361",
+      "usage_type": "General discussion",
+      "platform": "Reddit"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Neural_scaling_law",
+      "snippet": "Neural scaling law — A neural scaling law is a theoretical or empirical statistical law between these parameters. There are also other parameters with other scaling laws . In",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Jared_Kaplan",
+      "snippet": "Jared Kaplan — where he co-authored Scaling Laws for Neural Language Models (2020), which reported that empirically, the performance of language models steadily improves",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "Reuse of ideas / derivative",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Language_model",
+      "snippet": "Language model — recurrent neural network-based models , which had previously superseded the purely statistical models , such as the word n-gram language model . Noam Chomsky",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Foundation_model",
+      "snippet": "Foundation model — 2020), Scaling Laws for Neural Language Models , arXiv:2001.08361 Jo, Eun Seo; Gebru, Timnit (27 January 2020). \"Lessons from archives: Strategies for collecting",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "Large language model — Scott; Radford, Alec; Wu, Jeffrey; Amodei, Dario (2020). \" Scaling Laws for Neural Language Models \". arXiv:2001.08361 [cs.LG]. Brown, Tom B.; Mann, Benjamin;",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+      "snippet": "Generative pre-trained transformer — \" Scaling Laws for Neural Language Models \". arXiv preprint arXiv:2001.08361. Hoffmann, Jordan (2022). \"Training Compute-Optimal Large Language Models \"",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Generative_model",
+      "snippet": "Generative model — Jeffrey; Amodei, Dario (2020). \" Scaling Laws for Neural Language Models \". arXiv:2001.08361 [stat.ML]. \"Better Language Models and Their Implications\". OpenAI",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Neural_network_%28machine_learning%29",
+      "snippet": "Neural network (machine learning) — allow neural networks to model long-range dependencies in data and have become foundational for modern large language models . Today, artificial neural networks",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Power_law",
+      "snippet": "Power law — attenuation follows frequency power- laws within wide frequency bands for many complex media. Allometric scaling laws for relationships between biological",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "News mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+      "snippet": "List of large language models — \"Training Compute-Optimal Large Language Models \". arXiv:2203.15556 [cs.CL]. Table 20 and page 66 of PaLM: Scaling Language Modeling with Pathways Archived 2023-06-10",
+      "query": "Wikipedia: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Wikipedia"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA4b0g4VEJwZG1nTTdiUE1HX19SVDE5R0xZRHhmYnNXZ2RaZEpScWtOZ2tIaXR4aXhPcjFPYzY5bDN5MkJDaVBzV0VSM2Vtbl9a?oc=5",
+      "snippet": "LLM Scaling Laws: Analysis from AI Researchers - AIMultiple [AIMultiple] — <a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTFA4b0g4VEJwZG1nTTdiUE1HX19SVDE5R0xZRHhmYnNXZ2RaZEpScWtOZ2tIaXR4aXhPcjFPYzY5bDN5MkJDaVBzV0VSM2Vtbl9a?oc=5\" target=\"_blank\">LLM Scaling Laws: Analysis from AI Researchers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AIMultiple</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdjhHQy1FeUNEd1hScXpLdk9hQnVKM21kWVFLSWtiTHluS18tTzVhZ3UzQWZxbzRSMUhXeDBwaWlINVBVUENrZUZNVHhMQzdsbmJYQ2pqNHV5cFNEYUxiUENDYnF1VFhRLWlIWEkzTFZ5QVlhMjdYZmdmVkVqWGluWWRKRlNxNS0tTWs5Q05hRmlnTFFSMFJV?oc=5",
+      "snippet": "What if A.I. Doesn’t Get Much Better Than This? - The New Yorker [The New Yorker] — <a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxQdjhHQy1FeUNEd1hScXpLdk9hQnVKM21kWVFLSWtiTHluS18tTzVhZ3UzQWZxbzRSMUhXeDBwaWlINVBVUENrZUZNVHhMQzdsbmJYQ2pqNHV5cFNEYUxiUENDYnF1VFhRLWlIWEkzTFZ5QVlhMjdYZmdmVkVqWGluWWRKRlNxNS0tTWs5Q05hRmlnTFFSMFJV?oc=5\" target=\"_blank\">What if A.I. Doesn’t Get Much Better Than This?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The New Yorker</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdFFaVnBCSFBBTGFBMWd0N2t3V3hFRHRyV3BFNFhrZ1N2Z09rVDc4NGFNQmJZUFEyc2xpejNZNVhiUWwyVGs3T3Yxam5FRmo0N0NKVHc4V3VXLV93XzJjMnowbW1hdDY4ZDJEcm50cE1Gb3hTMEgtaUkzR0tieGVMbzNmYThHTnMzYTFMZC1NRzloTEJtRTdNb2hPTG1taFNwX25GQTJ6bmFKZmNUWE1OUWprTQ?oc=5",
+      "snippet": "What if A.I. Doesn’t Get Much Better Than This? - Machine Learning Week US [Machine Learning Week US] — <a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOdFFaVnBCSFBBTGFBMWd0N2t3V3hFRHRyV3BFNFhrZ1N2Z09rVDc4NGFNQmJZUFEyc2xpejNZNVhiUWwyVGs3T3Yxam5FRmo0N0NKVHc4V3VXLV93XzJjMnowbW1hdDY4ZDJEcm50cE1Gb3hTMEgtaUkzR0tieGVMbzNmYThHTnMzYTFMZC1NRzloTEJtRTdNb2hPTG1taFNwX25GQTJ6bmFKZmNUWE1OUWprTQ?oc=5\" target=\"_blank\">What if A.I. Doesn’t Get Much Better Than This?</a>&nbsp;&nbsp;<font color=\"#6f6f",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJSDFvTERhMWJvMFMxRUdqY3diWlFSMVdTTU5DSTY1YWVTb2VBYmlDWnhGQzJSaFlQSEtOY0lkX2UyRXFHN284LWVoaDJOSFpnUzY3Y25FaEFlZGFXeXphclh0U0xETF82RlhYVW14WW1Fc3c?oc=5",
+      "snippet": "Scaling laws for neural language models - OpenAI [OpenAI] — <a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTFBJSDFvTERhMWJvMFMxRUdqY3diWlFSMVdTTU5DSTY1YWVTb2VBYmlDWnhGQzJSaFlQSEtOY0lkX2UyRXFHN284LWVoaDJOSFpnUzY3Y25FaEFlZGFXeXphclh0U0xETF82RlhYVW14WW1Fc3c?oc=5\" target=\"_blank\">Scaling laws for neural language models</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">OpenAI</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcy1BRUZCM1pQekJfU0JBb05jX0U2ZlR6bFRNRW9vMGlDajBzN0NZY2xpMGNPV3FGNkd0aHRRdjlBeXdoZWFDUDZlaE1iTnp6aThzOU9ZTkVfQTJjd21rWFpCTWtUNUlHVDNRNDYzSUF0Tmc3OFRhbGtSZkJYTDZnNjhGN2N5Zm0ySnBSRF92Z0hoaEJNRURjSVlVLWpWZ3h3ZzNOQ252LWZ6WUFFbEE?oc=5",
+      "snippet": "AI Progress Shifts Beyond Raw Data and Computing Power - PYMNTS.com [PYMNTS.com] — <a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQcy1BRUZCM1pQekJfU0JBb05jX0U2ZlR6bFRNRW9vMGlDajBzN0NZY2xpMGNPV3FGNkd0aHRRdjlBeXdoZWFDUDZlaE1iTnp6aThzOU9ZTkVfQTJjd21rWFpCTWtUNUlHVDNRNDYzSUF0Tmc3OFRhbGtSZkJYTDZnNjhGN2N5Zm0ySnBSRF92Z0hoaEJNRURjSVlVLWpWZ3h3ZzNOQ252LWZ6WUFFbEE?oc=5\" target=\"_blank\">AI Progress Shifts Beyond Raw Data and Computing Power</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PYMNTS.com</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB2UkI1eTFWbUFkVXJsTjlGVEFuTjVUV2hUNGpSUElydThSSF9uZWlwenhwXzNpTnA4YzZyQmFWVURzWXhHcnlLZnhuRGozMmJ2VE56ZUZtVUI3eElaS1h2N2pYWnJnT0JsSGw4Y2NjSmRqMktLWlEw?oc=5",
+      "snippet": "GPT-5 — Just a Big F#*^! CON - Medium [Medium] — <a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFB2UkI1eTFWbUFkVXJsTjlGVEFuTjVUV2hUNGpSUElydThSSF9uZWlwenhwXzNpTnA4YzZyQmFWVURzWXhHcnlLZnhuRGozMmJ2VE56ZUZtVUI3eElaS1h2N2pYWnJnT0JsSGw4Y2NjSmRqMktLWlEw?oc=5\" target=\"_blank\">GPT-5 — Just a Big F#*^! CON</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Medium</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZFBOZlhXeWZyWXJ2aDFyd1F0dmdlXzJON1VZSVNIZXl6N20ySXEzMUdPc1F6a1U1N2k0aU9EVEQ4WG8tR21CSWswRldELUduUGVDdTZlUzhKMlhHRmNmMW40NlF3X0RGdXFOUUZPVUM3ZHlZN2MxSUlhMGFGT3E1Nw?oc=5",
+      "snippet": "Scaling Law Of Language Models - Towards Data Science [Towards Data Science] — <a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQZFBOZlhXeWZyWXJ2aDFyd1F0dmdlXzJON1VZSVNIZXl6N20ySXEzMUdPc1F6a1U1N2k0aU9EVEQ4WG8tR21CSWswRldELUduUGVDdTZlUzhKMlhHRmNmMW40NlF3X0RGdXFOUUZPVUM3ZHlZN2MxSUlhMGFGT3E1Nw?oc=5\" target=\"_blank\">Scaling Law Of Language Models</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Towards Data Science</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdWhmUkl1UU9DRXZRZHE0QWRPSGJPNFlTcFBGTW1FUlNTc3dNR0owVXROMzNSbEJ3Q1E3MFBXRnhKdXVUZW1leVhEaGZYcndJYjZpb1dUQWZYQjRLU3Jr?oc=5",
+      "snippet": "Neural scaling of deep chemical models - Nature [Nature] — <a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xdWhmUkl1UU9DRXZRZHE0QWRPSGJPNFlTcFBGTW1FUlNTc3dNR0owVXROMzNSbEJ3Q1E3MFBXRnhKdXVUZW1leVhEaGZYcndJYjZpb1dUQWZYQjRLU3Jr?oc=5\" target=\"_blank\">Neural scaling of deep chemical models</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Nature</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONE1zSG5HNF9tVFc0eVhYTlVJWnNuYTRaYk92ZC1OM0I5c0JBOEtVamRIeF9SSU9zWTN0TEJtTTNJeDZHYUx2XzlTZ1RNMTZNeEJma1lIdGJLVm5RcFFJaWNLbWtOTXRTQ3dETFJtV3U4QTc5RXE1bGdFQTJETjhEWXhrV1M4U2w5b3dBd2VrMA?oc=5",
+      "snippet": "Meta's Yann LeCun: Scaling AI Won't Make It Smarter - Business Insider [Business Insider] — <a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxONE1zSG5HNF9tVFc0eVhYTlVJWnNuYTRaYk92ZC1OM0I5c0JBOEtVamRIeF9SSU9zWTN0TEJtTTNJeDZHYUx2XzlTZ1RNMTZNeEJma1lIdGJLVm5RcFFJaWNLbWtOTXRTQ3dETFJtV3U4QTc5RXE1bGdFQTJETjhEWXhrV1M4U2w5b3dBd2VrMA?oc=5\" target=\"_blank\">Meta's Yann LeCun: Scaling AI Won't Make It Smarter</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Business Insider</font>",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    },
+    {
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVjAyNHRlSFFqa2l6cXd6MEROLWtZV0VYSlU1OF9fUFJCRkNlZUcyZnNvTUFnSUdLZ0xEd1QySjl1cVdNcjNIX2tlOTdCQjNwY1hGZ1N6YWwtOU44YTBvbFYwd21sbWUtNm01eC1wWVhnOE1VM0FPVld6V2FXRTIwOXBLZnNxSDR5bWpGU1J4dG5CeVJhaGQ1dldDTTdDTGlCeHE4bXZVLWJKelNX?oc=5",
+      "snippet": "The three AI scaling laws and what they mean for AI infrastructure - RCR Wireless News [RCR Wireless News] — <a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxQVjAyNHRlSFFqa2l6cXd6MEROLWtZV0VYSlU1OF9fUFJCRkNlZUcyZnNvTUFnSUdLZ0xEd1QySjl1cVdNcjNIX2tlOTdCQjNwY1hGZ1N6YWwtOU44YTBvbFYwd21sbWUtNm01eC1wWVhnOE1VM0FPVld6V2FXRTIwOXBLZnNxSDR5bWpGU1J4dG5CeVJhaGQ1dldDTTdDTGlCeHE4bXZVLWJKelNX?oc=5\" target=\"_blank\">The three AI scaling laws and what they mean for AI infrastructure</a>&nbsp;&nbsp;<fon",
+      "query": "News: Scaling Laws for Neural Language Models",
+      "usage_type": "General mention",
+      "platform": "Google News"
+    }
+  ]
+}
