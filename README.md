@@ -1,16 +1,47 @@
-# Article Reference Analyzer
+# doc-ref-analyzer
 
-Analyzes how an article is referenced and discussed online. For arXiv papers, academic citations are fetched additionally via Semantic Scholar.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 
-## Usage
+Analyze how an academic paper or article is discussed across the web — Hacker News, Reddit, Wikipedia, Google News, and academic citations — in a single CLI call.
 
-### CLI (recommended)
+For arXiv papers, academic citations are fetched additionally via the Semantic Scholar API.
+
+## Example
 
 ```bash
-python src/processing.py <URL> [--output text|json|both] [--save FILE]
+python src/processing.py https://arxiv.org/abs/2001.08361
 ```
 
-**Examples:**
+```
+[doc-ref-analyzer] Fetching metadata...
+[doc-ref-analyzer] Searching Hacker News, Reddit, Wikipedia, News, Semantic Scholar...
+[doc-ref-analyzer] Classifying 47 references...
+
+=== Scaling Laws for Neural Language Models ===
+Kaplan et al. (2020)  ·  8,912 citations (Semantic Scholar)
+
+Platform breakdown:
+  Hacker News     12 threads   (summary: 6 · endorsement: 4 · discussion: 2)
+  Reddit          18 posts     (summary: 7 · question: 5 · discussion: 6)
+  Wikipedia        3 articles
+  News             8 articles  (BBC, Wired, MIT Tech Review)
+  Academic        47 papers    (14 influential)
+
+Report saved: report_2001.08361_20260409_204321.txt
+```
+
+## Installation
+
+No required dependencies — all APIs use the Python standard library.
+
+Optional: install `anthropic` to enable LLM-based reference classification.
+
+```bash
+pip install anthropic   # optional
+```
+
+## Usage
 
 ```bash
 # Text report to stdout
@@ -20,97 +51,49 @@ python src/processing.py https://arxiv.org/abs/2001.08361
 python src/processing.py https://arxiv.org/abs/2001.08361 --output both --save report_2001.08361
 
 # JSON only
-python src/processing.py https://arxiv.org/abs/2001.08361 --output json --save report_2001.08361.json
+python src/processing.py https://arxiv.org/abs/2001.08361 --output json --save report.json
 ```
 
-### Script with fixed URL
+## How it works
 
-Set the URL and output mode in `src/main.py` and run:
+### 1. Metadata extraction
 
-```bash
-python src/main.py
-```
+For arXiv URLs: queries the arXiv API (title, abstract, authors) and Semantic Scholar (citation counts, fields of study).  
+For all other URLs: scrapes the HTML page (title, OG tags, meta description).
 
-The report is saved automatically as `.txt` and `.json` with a timestamped filename (e.g. `report_2001.08361_20260409_204321.txt`).
+### 2. Reference search
 
-## Dependencies
+Searches five platforms in parallel:
 
-No required external dependencies — all APIs are queried using the Python standard library.
+| Platform | Method |
+|---|---|
+| Semantic Scholar | Up to 100 citing papers with title, authors, year, abstract |
+| Hacker News | Algolia API — by title, arXiv ID, and direct URL |
+| Reddit | JSON API — by title, arXiv ID, and direct URL |
+| Wikipedia | MediaWiki API — by title and arXiv ID |
+| Google News RSS | By title and arXiv ID |
 
-**Optional:** The `anthropic` package enables LLM-based classification (step 3). Without it, only regex classification is used.
+### 3. Usage-type classification
 
-```bash
-pip install anthropic
-```
+Two-stage classification pipeline:
 
-## Methodology
-
-### 1. Metadata Extraction
-
-**For arXiv URLs**, two APIs are queried:
-- **arXiv API** (`export.arxiv.org`) — title, abstract, authors, publication year
-- **Semantic Scholar API** — citation counts (total & influential), fields of study
-
-**For all other URLs**, the HTML page is scraped (title tag, OG tags, meta description).
-
-### 2. Reference Search
-
-#### Academic citations — arXiv only (Semantic Scholar)
-Returns up to 100 citing papers with title, authors, year, and abstract. Each paper is recorded with its arXiv, DOI, or Semantic Scholar URL.
-
-#### Hacker News (Algolia API)
-Three queries:
-- Full-text search by title
-- Full-text search by arXiv ID *(arXiv only)*
-- URL-based search for the direct link *(arXiv only)*
-
-Snippets include the thread title, score, and comment count.
-
-#### Reddit (JSON API)
-Three queries:
-- Full-text search by title
-- Full-text search by arXiv ID *(arXiv only)*
-- URL-based search (`url:...`) for the direct link *(arXiv only)*
-
-Snippets include title, upvotes, comment count, and post body where available.
-
-#### Wikipedia (MediaWiki API)
-Two queries:
-- Full-text search by title
-- Full-text search by arXiv ID *(arXiv only)*
-
-Returns Wikipedia articles mentioning the search term, with a highlighted snippet.
-
-#### News (Google News RSS)
-Two queries:
-- Full-text search by title
-- Full-text search by arXiv ID *(arXiv only)*
-
-Returns recent news articles with title, source, and excerpt. Well-known outlets (BBC, Wired, NYT, Nature, MIT Tech Review, etc.) are detected as their own platform.
-
-### 3. Usage-Type Classification
-
-Classification runs in two stages:
-
-**Stage 1 — Regex:** Each result is classified immediately on ingestion via pattern matching. If no pattern matches, a platform-based fallback is applied.
-
-**Stage 2 — LLM (optional):** All non-academic results are then sent in a single batch request to Claude (`claude-opus-4-6`). The model is given the paper title and classifies each snippet using the same category schema. LLM classifications override the regex result. If the `anthropic` package is not installed, stage 1 is the final result.
+**Stage 1 — Regex:** pattern matching on ingestion, with platform-based fallback.  
+**Stage 2 — LLM (optional):** all non-academic results are sent in a single batch request to Claude. LLM classifications override regex results.
 
 | Category | Signals |
 |---|---|
-| **Critical discussion** | criticism, doubt, contradiction |
-| **Reuse of ideas / derivative** | own work based on the paper |
-| **Summary / paraphrase** | summary, TL;DR, key findings |
-| **Direct quote / citation** | direct citation, "the authors", "they find" |
-| **Positive endorsement** | recommendation, praise, "must-read", "seminal" |
-| **Question / Help request** | "has anyone", "how do I", "don't understand" |
-| **News mention** | mention in a news context |
-| **General discussion** | opinions, thoughts, general discussion |
-| **Contextual reference** | passing mention, "see also" |
-| **Academic citation** | academic paper / DOI  |
-| **General mention** | no pattern matched |
+| Critical discussion | criticism, doubt, contradiction |
+| Reuse / derivative work | "based on", "building on" |
+| Summary / paraphrase | "TL;DR", "key findings" |
+| Positive endorsement | "must-read", "seminal" |
+| Question / help request | "has anyone", "how do I" |
+| Academic citation | DOI, citing paper |
 
 ### 4. Export
 
-- **`.txt`** — Human-readable report with distribution charts by platform and usage type
-- **`.json`** — Structured output with metadata, summary, and all individual references
+- `.txt` — human-readable report with distribution charts by platform and usage type
+- `.json` — structured output with metadata, summary, and all individual references
+
+## Stack
+
+Python (stdlib) · Semantic Scholar API · Anthropic API (optional)
